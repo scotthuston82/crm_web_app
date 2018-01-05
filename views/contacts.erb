@@ -1,9 +1,11 @@
 <h3>There are <%= @contacts.count %> contacts</h3>
 
   <% @contacts.each do |contact| %>
-<div class="contact">  
+<div class="contact">
   <p> <%= contact.full_name %> (<%= contact.email %>)</p>
-  <p> <%= contact.note %> </p>
+  <div class="link">
+    <a href="/contacts/<%= contact.id %>">more info</a>
+  </div>
 </div>
 
   <% end %>
