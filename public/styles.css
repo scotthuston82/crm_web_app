@@ -53,6 +53,15 @@ main p {
   float: right;
   margin-top: -54px;
 }
+.link2 {
+  margin-right: 150px;
+}
+
+.edit {
+  display: inline-block;
+  margin-left: 200px;
+  float: none;
+}
 
 main a {
   text-decoration: none;

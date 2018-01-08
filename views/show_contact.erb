@@ -3,3 +3,12 @@
 <p>Name: <%= @contact.full_name %></p>
 <p>Email: <%=@contact.email %></p>
 <p>Note: <%= @contact.note %></p>
+
+<form action='/contacts/<%= @contact.id %>' method='post'>
+  <input type='hidden' name='_method' value='delete'>
+
+  <input type="submit" name="" value="Delete Contact">
+</form>
+<div class='edit'>
+  <a href="/contacts/<%= @contact.id %>/edit">edit contact</a>
+</div>
